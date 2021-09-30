@@ -12,7 +12,15 @@
                     <li class="list-group-item border-bottom-0">Product Code: {{product?.productCode}}</li>
                     <li class="list-group-item border-bottom-0">Release Date: {{product?.releaseDate}}</li>
                     <li class="list-group-item border-bottom-0">Description: {{product?.description}}</li>
-                    <li class="list-group-item border-bottom-0">Rating: {{product?.starRating}}</li>
+                    <li class="list-group-item border-bottom-0">
+                        <div class="d-flex align-items-center">
+                            <span>Rating: </span>
+                            <pm-star class="d-flex"></pm-star>
+                        </div>
+
+
+
+                    </li>
                     <li class="list-group-item border-bottom-0">
                         <h3>Price: ${{product?.price}}</h3>
                     </li>
