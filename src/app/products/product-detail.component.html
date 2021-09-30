@@ -5,8 +5,8 @@
     </div>
 
     <div class="container">
-        <div class="row">
-            <div class="col-sm">
+        <div class="row ">
+            <div class="col-sm d-flex justify-content-center">
                 <ul class="list-group list-group-flush border-0">
                     <li class="list-group-item border-bottom-0">Product id: {{product?.productId}}</li>
                     <li class="list-group-item border-bottom-0">Product Code: {{product?.productCode}}</li>
@@ -20,10 +20,12 @@
                 </ul>
             </div>
             <div class="col-sm">
-                <div class='img-container'>
-                    <img [src]='product?.imageUrl'
-                         alt=''
-                         class='img-fluid img-thumbnail border-0'>
+                <div class='container d-flex justify-content-center'>
+                    <div class='col-md-8 px-0 '>
+                        <img [src]='product?.imageUrl'
+                             alt=''
+                             class='img-fluid img-thumbnail border-0 rounded mx-auto d-block'>
+                    </div>
                 </div>
             </div>
         </div>

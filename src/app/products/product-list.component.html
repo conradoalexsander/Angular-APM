@@ -47,6 +47,7 @@
                         </td>
                         <td>
                             <a [routerLink]="['/products', product.productId]"
+                               [state]="{product: 'product' }"
                                routerLinkActive="ProductDetailComponent">
                                 {{product.productName}}
                             </a>
